@@ -16,6 +16,7 @@
       box-sizing: border-box;
     }
 
+
     body{
       background: url(images/bg-desktop.svg);
       background-size: cover;
@@ -72,15 +73,14 @@
 
     footer{
       height: 100px;
-      width: 100%;
+      width: auto;
       display: flex;
       align-items: center;
       justify-content: flex-end;
     }
 
     .footer-icons {
-      display: flex;
-      gap: 20px; 
+      margin-left: 50px;
     }
 
     .footer-icons svg:hover{
@@ -89,6 +89,10 @@
     }
 
     @media (min-width: 320px) and (max-width: 500px) {
+      html{
+        width: 100%;
+
+      }
       
       body{
         background-image: url(images/bg-mobile.svg);
@@ -99,10 +103,15 @@
         flex-direction: column;
       }
 
+    
       .left-side-card{
        text-align: center;
        margin-left: 125px;
        width: 500px;
+      }
+
+      footer{
+        width: 450px;
       }
 
     }
