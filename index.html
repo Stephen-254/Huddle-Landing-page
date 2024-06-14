@@ -27,8 +27,14 @@
     }
 
     #main-section{
-      display: flex;
-      margin-top: 10em;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto; 
+      justify-content: center;
+      align-content: center;
+      margin-top: 15em;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .left-side-card p{
@@ -110,10 +116,10 @@
       background-color: hsl(300, 69%, 71%);
     }
 
-    @media (min-width: 320px) and (max-width: 800px) {
+    @media (min-width: 320px) and (max-width: 780px) {
       html{
         width: 100%;
-
+        height: 100%;
       }
       
       body{
