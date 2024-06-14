@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    
+    *{
+      box-sizing: border-box;
+    }
+
+
+    body{
+      background: url(images/bg-desktop.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: hsl(257, 40%, 49%);
+    }
+
+    #main-section{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto; 
+      justify-content: center;
+      align-content: center;
+      margin-top: 15em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .left-side-card p{
+      width: 500px;
+      font-size: 23px;
+      color: whitesmoke;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings:"wdth" 100;
+    }
+
+    .left-side-card h1{
+      font-size: 45px;
+      width: 500px;
+      color: whitesmoke;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .left-side-card button{
+      width: 200px;
+      height: 60px;
+      border-radius: 50px;
+      box-shadow: 3px 3px 10px;
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings:"wdth" 100;
+      font-weight: 700;
+      border: 0;
+    }
+
+    .left-side-card button:hover{
+      color: white;
+      background-color: hsl(300, 69%, 71%);
+      box-shadow: 3px 3px 10px black;
+    }
+
+
+    footer{
+      height: 100px;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .circle-one,
+    .circle-two,
+    .circle-three{
+      border: 3px solid white;
+      border-radius: 50%;
+      padding: 10px;
+      margin-right: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
+    }
+
+    .footer-icons .circle-one:hover{
+      background-color: hsl(300, 69%, 71%);
+    }
+
+    .footer-icons .circle-two:hover{
+      background-color: hsl(300, 69%, 71%);
+    }
+
+    .footer-icons .circle-three:hover{
+      background-color: hsl(300, 69%, 71%);
+    }
+
+    @media (min-width: 320px) and (max-width: 780px) {
+      html{
+        width: 100%;
+        height: 100%;
+      }
+      
+      body{
+        background-image: url(images/bg-mobile.svg);
+      }
+
+      #main-section{
+        display: flex;
+        flex-direction: column;
+      }
+
+    
+      .left-side-card{
+       text-align: center;
+       margin-left: 125px;
+       width: 500px;
+      }
+
+      footer{
+        width: 450px;
+      }
+
+      .left-side-card{
+        font-size: 70px;
+      }
+
+      .left-side-card button{
+        width: 400px;
+        margin-bottom: 150px;
+        margin-top: 100px;
+      }
+
+      .left-side-card p{
+        font-size: 30px;
+      }
+    }
